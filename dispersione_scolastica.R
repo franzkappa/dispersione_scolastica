@@ -36,7 +36,8 @@ ggplot(dati) +
              size=3, alpha=.5, show.legend = TRUE) +
   scale_color_manual("", values=c("dark blue", "dark red")) +
   theme_minimal() +
-  theme(plot.title = element_text(family="Montserrat", size=20),
+  theme(#plot.background = element_rect(fill="papayawhip", color="papayawhip"),
+        plot.title = element_text(family="Montserrat", size=20),
         axis.title = element_text(family="Montserrat", size=15),
         axis.text = element_text(family="Montserrat", size=10),
         legend.text = element_text(family="Montserrat", size=12),
@@ -53,5 +54,5 @@ ggplot(dati) +
        title="Dispersione scolastica nella scuola secondaria superiore in Italia dal 1995 al 2018",
        caption="Dati: Report TuttoScuola 2018")
 
-#ggsave("Dispersione.jpg", height=20, width=40, units="cm")
+#ggsave("Dispersione_x.jpg", height=20, width=40, units="cm")
 #ggsave("Dispersione.pdf", height=20, width=40, units="cm")
